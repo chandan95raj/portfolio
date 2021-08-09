@@ -1,51 +1,233 @@
 <!DOCTYPE html>
 <html>
+<title>Portfolio Chandan Raj</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+html{
+  scroll-behavior: smooth;
+}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta lang="en">
-    <title>Portfolio | </title>
-    <link rel="icon" type="image/png" href="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <style>
-            .orange{
-            color: #e75f29;
-        }
-        .shadow{
-            box-shadow: 0px 5px 8px #ccc;
-        }
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images/chandan.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Chandan Raj</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+</nav>
 
-        nav .icon-bar{
-            background: #000;
-        }
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-        nav a{
-            color: #000;
-        }
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
 
-        .navbar-brand{
-            color: red;
-        }
-        .fclor{
-            background: #333;
-            color: #fff;
-            padding: 20px 0px;
-        }
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="images/chandan.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+    <a href="https://demo.algopanda.com/lookbharat/" class="w3-third w3-container w3-margin-bottom">
+      <img src="images/lookbharat.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Look Bharat</b></p>
+      </div>
+    </a>
+    <a href="https://demo.algopanda.com/vk0001/life-encureit/" class="w3-third w3-container w3-margin-bottom">
+      <img src="images/encure.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Encure IT</b></p>
+      </div>
+    </a>
+        <a href="https://demo.algopanda.com/agence-pure/" class="w3-third w3-container">
+      <img src="images/agence.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Agence Pure</b></p>
+      </div>
+    </a>
+  </div>
 
-    </style>
-</head>
 
-<body>
-  <h1>Portfolio Chandan Raj</h1>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <a href="https://demo.algopanda.com/dental/" class="w3-third w3-container w3-margin-bottom">
+      <img src="images/dental.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Dental Clinic</b></p>
+      </div>
+    </a>
+    <a href="https://demo.algopanda.com/school/" class="w3-third w3-container w3-margin-bottom">
+      <img src="images/school.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>School</b></p>
+      </div>
+    </a>
+    <a href="https://codes-with-chandan.web.app/packers/" class="w3-third w3-container w3-margin-bottom">
+      <img src="images/packers.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Packers</b></p>
+      </div>
+    </a>
+  </div>
+
+  <div class="w3-row-padding">
+
+    <a href="http://demo.codeswithchandan.com/hariom-hardware/" class="w3-third w3-container w3-margin-bottom">
+      <img src="images/hariom.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Hariom Hardware</b></p>
+      </div>
+    </a>
+    <a href="http://demo.codeswithchandan.com/sabrmatisone/" class="w3-third w3-container">
+      <img src="images/sb.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Sabarmati sone</b></p>
+      </div>
+    </a>
+            <a href="https://codes-with-chandan.web.app/code_editor/" class="w3-third w3-container">
+      <img src="images/code.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Code Editor</b></p>
+      </div>
+    </a>
+
+  </div>
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4 id="about"><b>About Me</b></h4>
+    <h5><b>Chandan Raj</b></h5>
+    <h6>Professional Goals :- </h6>
+       <p>To be associated with a progressive organization which can
+provide me with a dynamic work sphere to extract my inherent
+skills as a Professional, use and develop my aptitude to further the
+organization’s objectives and also attain my career targets in the
+progress.
+
+        </p>
+    <hr>
+    <h6>Work experiance :- </h6>
+       <p> Sr. Front-end Developer
+        Algopanda Technology | August 2020 - Present
+        I have been selected as web developer at ALGOPANDA TECHNOLOGIES.
+        Bringing mock-ups to life using HTML, CSS, JavaScript. Collaborating
+        closely with the team to support projects during all phases of delivery.
+        Building websites and apps that are responsive and usable. Monitoring
+        website performance and rectifying front-end-related issues.
+        </p>
+    <hr>
     
-</body>
+    <h4>Specializations</h4>
+    <!-- Progress bars / Skills -->
+    <p>HTML</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+    </div>
+    <p>CSS</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:90%">90%</div>
+    </div>
+    <p>JAVASCRIPT</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>
+    <p>BOOTSTRAP</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:90%">95%</div>
+    </div>
+    <p>
+    <p>PHP</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:90%">90%</div>
+    </div>
+    <p>
+    <p>MYSQL</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>
+    <p>PHOTOSHOP</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>
+    <p>FILMORA/CAMTESIA</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">85%</div>
+    </div>
+    <p>
+    <p>MS OFFICE</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p> 
+      <a href="chandan-resume.pdf" class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download Resume
+      </a>
+    </p>
+    <hr>
 
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>chandanraaz91@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Gaya, Bihar, India</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>+91 7277408063</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+  </div>
+
+  
+  <div class="w3-black w3-center w3-padding-24">Design & developed by <a href="#" title="W3.CSS"  class="w3-hover-opacity">Chandan Raj</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
 </html>
